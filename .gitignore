@@ -1,0 +1,17 @@
+dist/
+*.js
+*.js.map
+node_modules/
+.env
+.env.*.local
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+biome.cache/
+coverage/
+*.log

@@ -9,7 +9,12 @@
     "start": "tsc && node dist/index.js",
     "play": "tsx src/playground/index.ts"
   },
-  "keywords": ["typescript", "learning", "notes", "challenges"],
+  "keywords": [
+    "typescript",
+    "learning",
+    "notes",
+    "challenges"
+  ],
   "author": "Santiago Rendón",
   "license": "MIT",
   "packageManager": "pnpm@10.9.0",
@@ -19,6 +24,7 @@
     "typescript": "^5.8.3"
   },
   "dependencies": {
-    "@type-challenges/utils": "^0.1.1"
+    "@type-challenges/utils": "^0.1.1",
+    "type-testing": "^0.2.0"
   }
 }

@@ -7,6 +7,10 @@ settings:
 importers:
 
   .:
+    dependencies:
+      '@type-challenges/utils':
+        specifier: ^0.1.1
+        version: 0.1.1
     devDependencies:
       '@biomejs/biome':
         specifier: 1.9.4
@@ -223,6 +227,9 @@ packages:
     cpu: [x64]
     os: [win32]
 
+  '@type-challenges/utils@0.1.1':
+    resolution: {integrity: sha512-A7ljYfBM+FLw+NDyuYvGBJiCEV9c0lPWEAdzfOAkb3JFqfLl0Iv/WhWMMARHiRKlmmiD1g8gz/507yVvHdQUYA==}
+
   esbuild@0.25.2:
     resolution: {integrity: sha512-16854zccKPnC+toMywC+uKNeYSv+/eXkevRAfwRD/G9Cleq66m8XFIrigkbvauLLlCfDL45Q2cWegSg53gGBnQ==}
     engines: {node: '>=18'}
@@ -360,6 +367,8 @@ snapshots:
 
   '@esbuild/win32-x64@0.25.2':
     optional: true
+
+  '@type-challenges/utils@0.1.1': {}
 
   esbuild@0.25.2:
     optionalDependencies:

@@ -1,7 +1,7 @@
 type NumbersArray = number[]
 type Index = number
 
-// 4. Write out the code for the earlier sum function
+// 4.1 Write out the code for the earlier sum function
 // const sum = (arr: NumbersArray): number => {
 //   if (arr.length === 1) return arr[0]
 //   return arr[0] + sum(arr.slice(1))
@@ -40,7 +40,7 @@ function maxNumberRecursive(arr: NumbersArray, idx: Index = 0, maxNumber = -Infi
 
 console.log(maxNumberRecursive([2, 45, 18, 392, 3, 1, 34, 98, 201, 5])) // 392
 
-//4.3 Remember binary search from chapter 1? It’s a D&C algorithm, too. 
+//4.4 Remember binary search from chapter 1? It’s a D&C algorithm, too. 
 // Can you come up with the base case and recursive case for binary search?
 function recursiveBinarySearch(arr: NumbersArray, target: number, left: number = 0, right: number = arr.length - 1) {
   if (left > right) return null

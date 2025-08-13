@@ -35,7 +35,7 @@ function maxNumberRecursive(arr: NumbersArray, idx: Index = 0, maxNumber = -Infi
   if (arr[idx] > maxNumber) {
     maxNumber = arr[idx]
   }
-  return maxNumberRecursive(arr, ++idx, maxNumber)
+  return maxNumberRecursive(arr, idx + 1, maxNumber)
 }
 
 console.log(maxNumberRecursive([2, 45, 18, 392, 3, 1, 34, 98, 201, 5]))

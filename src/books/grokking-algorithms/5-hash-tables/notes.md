@@ -25,3 +25,33 @@ No, because every time returns the index of a new number, not depends on x
 
 ### 5.4 f(x) = len(x)      ← Uses the length of the string as the index
 Is consistent but maybe a bad idea because all the strings that have the same length overlaps
+
+### 5.5 A phonebook where the keys are names and values are phone numbers. The names are as follows: Esther, Ben, Bob, and Dan.
+#### 1. Return “1” for all input.
+Bad distribution, all items go to the same bucket
+#### 2. Use the length of the string as the index.
+Bad distribution, all items that start with the same letter collide in the same bucket
+#### 3. Use the first character of the string as the index. So, all strings starting with a are hashed together, and so on.
+Bad distribution, beacause all items that starts with the same letter collapses in the same bucket
+#### 4. Map every letter to a prime number: a = 2, b = 3, c = 5, d = 7, e = 11, and so on. For a string, the hash function is the sum of all the characters modulo the size of the hash. For example, if your hash size is 10, and the string is “bag,” the index is (3 + 2 + 17) % 10 = 22 % 10 = 2.
+Good distribution for the example
+
+### 5.6 A mapping from battery size to power. The sizes are A, AA, AAA, and AAAA.
+#### 1. Return “1” for all input.
+Bad distribution, all items go to the same bucket
+#### 2. Use the length of the string as the index.
+Good distribution for the example
+#### 3. Use the first character of the string as the index. So, all strings starting with a are hashed together, and so on.
+Bad distribution, beacause all items that starts with the same letter collapses in the same bucket
+#### 4. Map every letter to a prime number: a = 2, b = 3, c = 5, d = 7, e = 11, and so on. For a string, the hash function is the sum of all the characters modulo the size of the hash. For example, if your hash size is 10, and the string is “bag,” the index is (3 + 2 + 17) % 10 = 22 % 10 = 2.
+Good distribution for the example
+
+### 5.7 A mapping from book titles to authors. The titles are Maus, Fun Home, and Watchmen.
+#### 1. Return “1” for all input.
+Bad distribution, all items go to the same bucket
+#### 2. Use the length of the string as the index.
+Bad distribution, all items that start with the same letter collide in the same bucket
+#### 3. Use the first character of the string as the index. So, all strings starting with a are hashed together, and so on.
+Good distribution for the example
+#### 4. Map every letter to a prime number: a = 2, b = 3, c = 5, d = 7, e = 11, and so on. For a string, the hash function is the sum of all the characters modulo the size of the hash. For example, if your hash size is 10, and the string is “bag,” the index is (3 + 2 + 17) % 10 = 22 % 10 = 2.
+Good distribution for the example
